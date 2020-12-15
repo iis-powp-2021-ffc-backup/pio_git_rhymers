@@ -1,0 +1,7 @@
+#automatically generated files, IDEs setups etc.
+.settings
+.classpath
+.project
+
+#Project artifacts and building
+target/*
