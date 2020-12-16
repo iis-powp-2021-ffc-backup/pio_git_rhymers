@@ -1,8 +1,8 @@
 package edu.kis.vh.nursery;
 //kombinacja alt + <- w Intellij zmienia kartę z wcześniej otwartym plikiem
-public class FIFORhymer extends defaultCountingOutRhymer {
+public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    public defaultCountingOutRhymer temp = new defaultCountingOutRhymer();
+    public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     @Override
     public int countOut() {
