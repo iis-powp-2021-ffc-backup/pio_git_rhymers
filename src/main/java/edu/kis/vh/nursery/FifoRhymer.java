@@ -18,3 +18,4 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 	}
 }
 // Kombinacja klawiszy alt + ← powoduje przejście pomiędzy otwartymi kartami plików.
+
