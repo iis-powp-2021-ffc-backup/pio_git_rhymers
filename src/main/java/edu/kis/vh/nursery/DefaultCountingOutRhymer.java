@@ -33,10 +33,6 @@ public class DefaultCountingOutRhymer {
         return total;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
     public int countOut() {
         if (callCheck())
             return -1;
