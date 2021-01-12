@@ -25,6 +25,18 @@ public class DefaultCountingOutRhymer {
         return numbers[total];
     }
 
+    public int[] getNumbers() {
+        return numbers;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
     public int countOut() {
         if (callCheck())
             return -1;
