@@ -76,3 +76,4 @@ public class RhymersJUnitTest {
 	}
 
 }
+//TODO: Trzeba dodać więcej testów
