@@ -4,10 +4,12 @@ public class IntLinkedList {
 
     private Node last;
     private int i;
-
+    public final static int MAX_SIZE = 50;
     private final static int IS_EMPTY = -1;
+    private int nodeCounter = 0;
 
     public void push(int i) {
+        nodeCounter++;
         if (last == null)
             last = new Node(i);
         else {
@@ -22,7 +24,7 @@ public class IntLinkedList {
     }
 
     public boolean isFull() {
-        return false;
+        return MAX_SIZE == nodeCounter;
     }
 
     public int top() {
@@ -32,6 +34,7 @@ public class IntLinkedList {
     }
 
     public int pop() {
+        nodeCounter--;
         if (isEmpty())
             return IS_EMPTY;
         int ret = last.getValue();
