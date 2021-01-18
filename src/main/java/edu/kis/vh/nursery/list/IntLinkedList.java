@@ -26,7 +26,7 @@ public class IntLinkedList {
     public boolean isFull() {
         return MAX_SIZE == nodeCounter;
     }
-
+//42 633 02 52
     public int top() {
         if (isEmpty())
             return IS_EMPTY;
