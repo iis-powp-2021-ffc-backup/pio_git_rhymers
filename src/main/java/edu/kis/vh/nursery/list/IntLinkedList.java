@@ -131,5 +131,4 @@ public class IntLinkedList {
             this.next = next;
         }
     }
-
 }

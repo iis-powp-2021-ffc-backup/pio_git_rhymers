@@ -36,5 +36,4 @@ public class DefaultCountingOutRhymer {
             return IS_EMPTY;
         return numbers[EMPTY_RHYMER_INDICATOR--];
     }
-
 }
