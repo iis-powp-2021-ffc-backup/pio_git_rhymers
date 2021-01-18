@@ -35,7 +35,7 @@ public class IntLinkedList {
         last = last.prev;
         return ret;
     }
-    class Node {
+    private class Node {
          int value;
          Node prev;
          Node next;
