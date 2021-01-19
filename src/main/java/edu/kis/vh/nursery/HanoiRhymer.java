@@ -16,3 +16,6 @@ int totalRejected = 0;
 	}
 
 }
+
+//5,12,14,15
+//przechodzenie miedzy oknami
