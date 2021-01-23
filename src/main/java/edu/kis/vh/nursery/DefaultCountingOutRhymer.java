@@ -25,12 +25,14 @@ public class DefaultCountingOutRhymer {
         return EMPTY_RHYMER_INDICATOR == CAPACITY - 1;
     }
 
+    //TODO: Add brackets to if for better readability and avoiding unintended bugs
     protected int peekaboo() {
         if (callCheck())
             return IS_EMPTY;
         return numbers[EMPTY_RHYMER_INDICATOR];
     }
 
+    //TODO: Add brackets to if for better readability and avoiding unintended bugs
     public int countOut() {
         if (callCheck())
             return IS_EMPTY;
