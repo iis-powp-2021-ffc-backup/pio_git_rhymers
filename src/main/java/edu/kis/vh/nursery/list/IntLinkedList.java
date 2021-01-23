@@ -53,6 +53,7 @@ public class IntLinkedList {
         return MAX_SIZE == nodeCounter;
     }
 
+    //TODO: Add brackets to if for better readability and avoiding unintended bugs
     /**
      * Returns the value of last element in linked list
      * @return value of last element (int)
@@ -63,6 +64,7 @@ public class IntLinkedList {
         return last.getValue();
     }
 
+    //TODO: Add brackets to if for better readability and avoiding unintended bugs
     /**
      * Deletes last node and return it's value
      * @return value of last node
@@ -131,5 +133,4 @@ public class IntLinkedList {
             this.next = next;
         }
     }
-
 }
