@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.Collections;
 
 public class IntArrayStack {
     private static int EMPTY_RHYMER_INDICATOR = -1;
@@ -24,7 +24,7 @@ public class IntArrayStack {
     }
 
     //TODO: Add brackets to if for better readability and avoiding unintended bugs
-    protected int peekaboo() {
+    public int peekaboo() {
         if (callCheck())
             return IS_EMPTY;
         return numbers[EMPTY_RHYMER_INDICATOR];

@@ -1,9 +1,9 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.Collections;
 
 /**
  * Linked list implementation for holding int value in each node
  */
-public class IntLinkedList {
+public class IntLinkedList implements Collection {
 
     /**
      * Holds reference to last node in linked list or null if is empty
@@ -26,6 +26,7 @@ public class IntLinkedList {
      * This method creates new node, adds it to linked list and sets node's value
      * @param i value to be set for node
      */
+    @Override
     public void push(int i) {
         nodeCounter++;
         if (last == null)
@@ -41,6 +42,7 @@ public class IntLinkedList {
      * Checks if linked list is empty
      * @return true if linked list is empty, otherwise false
      */
+    @Override
     public boolean isEmpty() {
         return last == null;
     }
@@ -49,6 +51,7 @@ public class IntLinkedList {
      * Checks if linked list has reached maximum capacity
      * @return true if linked list is full, otherwise false
      */
+    @Override
     public boolean isFull() {
         return MAX_SIZE == nodeCounter;
     }
@@ -58,10 +61,16 @@ public class IntLinkedList {
      * Returns the value of last element in linked list
      * @return value of last element (int)
      */
+    @Override
     public int top() {
         if (isEmpty())
             return IS_EMPTY;
         return last.getValue();
+    }
+
+    @Override
+    public int size() {
+        return nodeCounter;
     }
 
     //TODO: Add brackets to if for better readability and avoiding unintended bugs
@@ -69,6 +78,7 @@ public class IntLinkedList {
      * Deletes last node and return it's value
      * @return value of last node
      */
+    @Override
     public int pop() {
         nodeCounter--;
         if (isEmpty())
