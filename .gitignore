@@ -1,0 +1,9 @@
+#automatically generated files, IDEs setups etc.
+.settings
+.classpath
+.project
+.idea
+powp-rhymers.iml
+
+#Project artifacts and building
+target/*
